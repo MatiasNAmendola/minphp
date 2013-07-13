@@ -1,0 +1,9 @@
+AddDefaultCharset utf-8
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteRule ^((?!publico/?).)*$ index.php
+</IfModule>
+
+
+ErrorDocument 404 /404.html
